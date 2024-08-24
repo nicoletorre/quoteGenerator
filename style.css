@@ -1,0 +1,112 @@
+body {
+    background-color: #1D243D;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.title {
+    color: white;
+    top: 25px !important;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    white-space: nowrap; 
+    font-size: 2rem; 
+    text-align: center;
+}
+
+.container {
+    background-color: wheat;
+    width: 80%;
+    max-width: 630px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px gray;
+    text-align: center;
+    position: relative; 
+}
+
+.container h1 {
+    margin-top: 20px;
+}
+
+.container p {
+    font-size: 18.5px;
+    margin-top: 20px;
+}
+
+button {
+    position: absolute; 
+    bottom: 20px; 
+    left: 80%; 
+    transform: translateX(-50%); /* Center horizontally */
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background-color:  #0056b3;
+    border: 1px solid blue !important;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 8px 10px white;
+}
+
+.fa-clipboard{
+    left: 80px;
+    top: 210px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 4vmin;
+}
+.fa-twitter{
+    left: 120px;
+    top: 210px;
+    position: absolute;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 4vmin;
+}
+.fa-clipboard:hover, .fa-twitter:hover{
+    color: blue;
+}
+
+@media (min-width: 320px) {
+    .container {
+        margin: 15px;
+    }
+    button {
+        margin: -10px;
+        bottom: 40px;
+        width: 120px;
+        height: 50px;
+        position: absolute;
+       
+    }
+    .fa-clipboard{
+        margin: -30px;
+        top: 240px;
+        position: absolute;
+    }
+    .fa-twitter{
+        margin: -30px;
+        top: 240px;
+        position: absolute;
+    }
+    .title {
+        color: white;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        position: absolute;
+        white-space: wrap; /* Prevent wrapping */
+        font-size: 1.5rem; /* Default font size */
+        text-align: center;
+        
+    }
+}
